@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="CS CHRÉTIEN DE LA FOI (CSCF) - Institution éducative d'excellence à Kinshasa. Découvrez une école où l'excellence académique rencontre les valeurs chrétiennes.">
+    <meta name="keywords" content="CSCF, école chrétienne Kinshasa, école primaire RDC, éducation excellence, institution scolaire, meilleure école Kinshasa">
+    <meta name="author" content="CS CHRÉTIEN DE LA FOI - CSCF">
+    <meta property="og:title" content="CSCF | CS CHRÉTIEN DE LA FOI - L'Excellence au Service de la Foi">
+    <meta property="og:description" content="Une institution d'exception qui forme les leaders de demain dans un cadre d'apprentissage privilégié.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>CSCF | CS CHRÉTIEN DE LA FOI - Institution d'Excellence</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231a56a6'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white'>✝</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        /* ============================================
+           CSCF - VERSION PRESTIGE
+           Palette : Bleu profond & Blanc Élégant
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-navy: #0a2b44;
+            --primary-deep: #0a3a5a;
+            --primary-blue: #1e5a8a;
+            --primary-light: #2c7cb6;
+            --accent-gold: #d4af37;
+            --accent-silver: #c0c0c0;
+            --pure-white: #ffffff;
+            --off-white: #f8fafc;
+            --gray-light: #f1f5f9;
+            --gray: #64748b;
+            --dark: #0f172a;
+            --border-light: #e2e8f0;
+            --shadow-sm: 0 4px 12px rgba(0,0,0,0.03);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
+            --shadow-lg: 0 20px 40px rgba(0,0,0,0.1);
+            --shadow-xl: 0 25px 50px rgba(0,0,0,0.15);
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--pure-white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Page Navigation */
+        .page {
+            display: none;
+            animation: pageReveal 0.7s cubic-bezier(0.2, 0.9, 0.4, 1);
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes pageReveal {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Typographie Premium */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        /* Top Bar Élégante */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-deep) 100%);
+            color: var(--pure-white);
+            font-size: 13px;
+            position: relative;
+            z-index: 1001;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 12px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .contact-info i {
+            font-size: 13px;
+            color: var(--accent-gold);
+        }
+
+        .contact-info a {
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        .social-links a {
+            color: var(--pure-white);
+            transition: var(--transition);
+            font-size: 14px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent-gold);
+            transform: translateY(-3px);
+            color: var(--primary-navy);
+        }
+
+        /* Marquee Luxe */
+        .marquee {
+            background: linear-gradient(90deg, var(--primary-blue), var(--primary-light));
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 35s linear infinite;
+        }
+
+        .marquee-content span {
+            margin-right: 60px;
+        }
+
+        .marquee-content i {
+            margin-right: 10px;
+            color: var(--accent-gold);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Navigation Ambitieuse */
+        .main-nav {
+            background: var(--pure-white);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.98);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            font-size: 1.7rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .logo:hover .logo-icon {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-md);
+        }
+
+        .logo-text h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: var(--primary-navy);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text h1 span {
+            color: var(--primary-blue);
+            font-weight: 900;
+        }
+
+        .logo-text p {
+            font-size: 0.7rem;
+            color: var(--gray);
+            letter-spacing: 0.8px;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+            padding: 10px 18px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-blue);
+            background: var(--gray-light);
+        }
+
+        .btn-parents {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy)) !important;
+            color: var(--pure-white) !important;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-parents:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            background: linear-gradient(135deg, var(--primary-navy), var(--primary-blue)) !important;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--primary-navy);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .menu-toggle:hover {
+            background: var(--gray-light);
+        }
+
+        /* Boutons Premium */
+        .btn-primary, .btn-secondary, .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 36px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: var(--transition);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy));
+            color: var(--pure-white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--primary-navy), var(--primary-blue));
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--pure-white);
+            transform: translateY(-3px);
+        }
+
+        /* Hero Section Prestige */
+        .hero {
+            min-height: 700px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(10,43,68,0.92), rgba(10,58,90,0.88)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--pure-white);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212,175,55,0.2);
+            backdrop-filter: blur(8px);
+            padding: 8px 24px;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 28px;
+            letter-spacing: 1.5px;
+            border: 1px solid rgba(212,175,55,0.3);
+        }
+
+        .hero-content h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            margin-bottom: 38px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Quick Access Premium */
+        .quick-access {
+            margin-top: -70px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-access-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+
+        .quick-card {
+            background: var(--pure-white);
+            padding: 32px 24px;
+            text-align: center;
+            border-radius: 28px;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid var(--border-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quick-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .quick-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .quick-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .quick-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gray-light), var(--pure-white));
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 1px solid var(--border-light);
+        }
+
+        .quick-icon i {
+            font-size: 2rem;
+            color: var(--primary-blue);
+        }
+
+        /* Galerie Dynamique & Fluide */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--off-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-slider {
+            overflow: visible;
+            padding: 20px 0 60px;
+        }
+
+        .gallery-slide {
+            border-radius: 28px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-slide img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .gallery-slide:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(10,43,68,0.9));
+            padding: 30px 20px 20px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-slide:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h4 {
+            color: var(--pure-white);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .gallery-overlay p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8rem;
+        }
+
+        .gallery-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .gallery-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .gallery-modal img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        .gallery-modal-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* Classes Premium */
+        .classes-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .class-card {
+            background: var(--pure-white);
+            border-radius: 28px;
+            padding: 36px 24px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--border-light);
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .class-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .class-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            font-family: 'Montserrat', sans-serif;
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .class-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin: 20px 0;
+        }
+
+        /* Stats Premium */
+        .stats-section {
+            padding: 90px 0;
+            background: linear-gradient(135deg, var(--primary-navy), var(--primary-deep));
+            color: var(--pure-white);
+            position: relative;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            text-align: center;
+        }
+
+        .stat-item i {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--accent-gold);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Témoignages */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--pure-white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .testimonial-card {
+            background: var(--off-white);
+            padding: 38px;
+            border-radius: 28px;
+            transition: var(--transition);
+            border: 1px solid var(--border-light);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-card i {
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy));
+            text-align: center;
+            color: var(--pure-white);
+            position: relative;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-navy);
+            color: var(--pure-white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo i {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+        }
+
+        .footer-col h4 {
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--accent-gold);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Page Headers */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-navy), var(--primary-deep));
+            padding: 120px 0 80px;
+            text-align: center;
+            color: var(--pure-white);
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Formulaires */
+        .form-container {
+            max-width: 650px;
+            margin: 80px auto;
+            background: var(--pure-white);
+            padding: 50px;
+            border-radius: 32px;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30,90,138,0.1);
+        }
+
+        /* Scroll Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 52px;
+            height: 52px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            background: var(--accent-gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .classes-grid, .stats-grid, .testimonials-grid, .footer-grid, .quick-access-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-content h2 { font-size: 2.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--pure-white);
+                flex-direction: column;
+                padding: 24px;
+                gap: 12px;
+                box-shadow: var(--shadow-xl);
+                border-top: 1px solid var(--border-light);
+            }
+            .nav-menu.active { display: flex; }
+            .classes-grid, .stats-grid, .testimonials-grid, .footer-grid, .quick-access-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h2 { font-size: 1.8rem; }
+            .page-header h1 { font-size: 2rem; }
+            .form-container { margin: 40px 20px; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone-alt"></i> <a href="tel:+243123456789">+243 999-999-838 </a></span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:info@cscf-rdc.org">info@cscf-rdc.org</a></span>
+                    <span><i class="fas fa-map-marker-alt"></i> Kinshasa, République Démocratique du Congo</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="marquee">
+            <div class="marquee-content">
+                <span><i class="fas fa-cross"></i> CS CHRÉTIEN DE LA FOI (CSCF) - L'Excellence au Service de la Foi</span>
+                <span><i class="fas fa-calendar-check"></i> Inscriptions 2025-2026 Ouvertes - Places Limitées</span>
+                <span><i class="fas fa-bible"></i> « Instruis l'enfant selon la voie qu'il doit suivre » Proverbes 22:6</span>
+                <span><i class="fas fa-trophy"></i> Institution d'Excellence - Programme Bilingue</span>
+                <span><i class="fas fa-heart"></i> Une École qui Forme des Leaders Intègres</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Ambitieuse -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#" onclick="showPage('home')">
+                        <div class="logo-icon"><i class="fas fa-cross"></i></div>
+                        <div class="logo-text">
+                            <h1>CS CHRÉTIEN <span>DE LA FOI</span></h1>
+                            <p>CSCF · Établissement d'Excellence</p>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a onclick="showPage('home')" class="active">ACCUEIL</a></li>
+                    <li><a onclick="showPage('about')">L'INSTITUTION</a></li>
+                    <li><a onclick="showPage('classes')">PROGRAMMES</a></li>
+                    <li><a onclick="showPage('faith')">FOI</a></li>
+                    <li><a onclick="showPage('gallery')">GALERIE</a></li>
+                    <li><a onclick="showPage('inscriptions')">INSCRIPTIONS</a></li>
+                    <li><a onclick="showPage('contact')">CONTACT</a></li>
+                    <li><a onclick="showPage('parents')" class="btn-parents"><i class="fas fa-user-lock"></i> ESPACE PARENTS</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE ACCUEIL ========== -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-cross"></i> DEPUIS 2025 · EXCELLENCE RECONNUE</span>
+                <h2>CS CHRÉTIEN DE LA FOI<br>Là où l'Excellence rencontre la Foi</h2>
+                <p>Une institution d'exception qui forme des leaders intègres, compétents et ancrés dans les valeurs chrétiennes. Découvrez un cadre d'apprentissage unique à Kinshasa.</p>
+                <div class="hero-buttons">
+                    <button onclick="showPage('inscriptions')" class="btn-primary"><i class="fas fa-pen-fancy"></i> Inscrire mon enfant</button>
+                    <button onclick="showPage('gallery')" class="btn-secondary"><i class="fas fa-play-circle"></i> Visite virtuelle</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <div class="container">
+                <div class="quick-access-grid">
+                    <div class="quick-card" onclick="showPage('classes')"><div class="quick-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Programmes d'Excellence</h3><p>1ère à 4ème année · Classes à effectif réduit</p></div>
+                    <div class="quick-card" onclick="showPage('faith')"><div class="quick-icon"><i class="fas fa-bible"></i></div><h3>Formation Chrétienne</h3><p>Des valeurs solides pour construire l'avenir</p></div>
+                    <div class="quick-card" onclick="showPage('gallery')"><div class="quick-icon"><i class="fas fa-images"></i></div><h3>Découvrir l'école</h3><p>Visitez nos infrastructures modernes</p></div>
+                    <div class="quick-card" onclick="showPage('inscriptions')"><div class="quick-icon"><i class="fas fa-file-signature"></i></div><h3>Pré-inscription</h3><p>Rejoignez la communauté CSCF</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item"><i class="fas fa-chalkboard-user"></i><div class="stat-number">4</div><p>Classes d'Excellence</p><small>1ère à 4ème année</small></div>
+                    <div class="stat-item"><i class="fas fa-user-graduate"></i><div class="stat-number">85+</div><p>Élèves Épanouis</p><small>Une communauté grandissante</small></div>
+                    <div class="stat-item"><i class="fas fa-chalkboard"></i><div class="stat-number">8</div><p>Enseignants Experts</p><small>Pédagogie personnalisée</small></div>
+                    <div class="stat-item"><i class="fas fa-star"></i><div class="stat-number">100</div><p>Satisfaction Parents</p><small>Excellence reconnue</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header" style="text-align:center; margin-bottom:60px;">
+                    <span style="display:inline-block; background:var(--gray-light); color:var(--primary-blue); padding:6px 20px; border-radius:50px; font-size:0.8rem;">TÉMOIGNAGES</span>
+                    <h2 style="margin-top:20px;">Ils nous font confiance</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Une institution d'exception ! Mes enfants progressent chaque jour dans un cadre chaleureux et exigeant. Les valeurs enseignées sont un véritable atout."</p><h4 style="color:var(--primary-blue); margin-top:20px;">Mme NGOY</h4><p style="color:var(--gray);">Parent d'élève en 3ème année</p></div>
+                    <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"L'encadrement est remarquable. Mon fils a fait des progrès spectaculaires en lecture et en écriture. L'équipe pédagogique est à l'écoute et compétente."</p><h4 style="color:var(--primary-blue); margin-top:20px;">M. KABAMBA</h4><p style="color:var(--gray);">Parent d'élève en 2ème année</p></div>
+                    <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>"Une école nouvelle avec une vision claire et ambitieuse. Les infrastructures sont modernes et l'ambiance est familiale. Je recommande vivement !"</p><h4 style="color:var(--primary-blue); margin-top:20px;">Mme MABIKA</h4><p style="color:var(--gray);">Parent d'élève en 1ère année</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <i class="fas fa-cross" style="font-size: 3.5rem; margin-bottom: 25px;"></i>
+                    <h2 style="font-size: 2.2rem;">Prêt à offrir l'excellence à votre enfant ?</h2>
+                    <p style="margin: 25px 0; font-size: 1.1rem;">Rejoignez la communauté CSCF et donnez à votre enfant les meilleures chances de réussite.</p>
+                    <div class="hero-buttons" style="justify-content: center;">
+                        <button onclick="showPage('inscriptions')" class="btn-primary">Pré-inscrire mon enfant <i class="fas fa-arrow-right"></i></button>
+                        <button onclick="showPage('contact')" class="btn-secondary">Demander une visite</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== PAGE À PROPOS ========== -->
+    <div id="about" class="page">
+        <section class="page-header"><div class="container"><h1>L'Institution</h1><p>Une vision, une mission, une excellence</p></div></section>
+        <section style="padding: 80px 0;"><div class="container"><div style="display:grid; grid-template-columns:1fr 1fr; gap:60px;"><div><h2 style="color:var(--primary-blue);">CS CHRÉTIEN DE LA FOI</h2><p style="margin:20px 0;">Fondée sur la conviction que l'éducation véritable forme l'intégralité de l'être humain, le CSCF offre un cadre d'apprentissage d'exception où rigueur académique et formation chrétienne se conjuguent harmonieusement.</p><p>Actuellement, notre établissement accueille les enfants de la 1ère à la 4ème année primaire dans des classes à effectifs réduits, garantissant un suivi personnalisé et une attention particulière à chaque élève.</p></div><div><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600" style="width:100%; border-radius:32px; box-shadow:var(--shadow-lg);"></div></div></div></section>
+        <section style="padding:80px 0; background:var(--off-white);"><div class="container"><div style="display:grid; grid-template-columns:repeat(3,1fr); gap:40px;"><div style="text-align:center; padding:40px; background:white; border-radius:28px;"><i class="fas fa-bullseye" style="font-size:2.5rem; color:var(--primary-blue);"></i><h3 style="margin:20px 0;">Mission</h3><p>Former des citoyens intègres, compétents et ancrés dans les valeurs chrétiennes.</p></div><div style="text-align:center; padding:40px; background:white; border-radius:28px;"><i class="fas fa-eye" style="font-size:2.5rem; color:var(--primary-blue);"></i><h3 style="margin:20px 0;">Vision</h3><p>Devenir une référence en matière d'éducation chrétienne d'excellence en RDC.</p></div><div style="text-align:center; padding:40px; background:white; border-radius:28px;"><i class="fas fa-heart" style="font-size:2.5rem; color:var(--primary-blue);"></i><h3 style="margin:20px 0;">Valeurs</h3><p>Excellence · Intégrité · Respect · Service · Foi</p></div></div></div></section>
+    </div>
+
+    <!-- ========== PAGE CLASSES ========== -->
+    <div id="classes" class="page">
+        <section class="page-header"><div class="container"><h1>Nos Programmes</h1><p>Un parcours d'excellence de la 1ère à la 4ème année</p></div></section>
+        <section style="padding:80px 0;"><div class="container"><div class="classes-grid"><div class="class-card"><div class="class-number">01</div><div class="class-icon"><i class="fas fa-book"></i></div><h3>1ère année</h3><p>Apprentissage fondamental de la lecture, écriture et calcul</p><p style="margin-top:15px; font-weight:600; color:var(--primary-blue);">6 ans révolus</p></div><div class="class-card"><div class="class-number">02</div><div class="class-icon"><i class="fas fa-pen"></i></div><h3>2ème année</h3><p>Renforcement de la lecture, grammaire et calcul mental</p><p style="margin-top:15px; font-weight:600; color:var(--primary-blue);">7 ans révolus</p></div><div class="class-card"><div class="class-number">03</div><div class="class-icon"><i class="fas fa-globe"></i></div><h3>3ème année</h3><p>Développement de l'autonomie, découverte du monde</p><p style="margin-top:15px; font-weight:600; color:var(--primary-blue);">8 ans révolus</p></div><div class="class-card"><div class="class-number">04</div><div class="class-icon"><i class="fas fa-trophy"></i></div><h3>4ème année</h3><p>Approfondissement, préparation aux cycles supérieurs</p><p style="margin-top:15px; font-weight:600; color:var(--primary-blue);">9 ans révolus</p></div></div></div></section>
+    </div>
+
+    <!-- ========== PAGE NOTRE FOI ========== -->
+    <div id="faith" class="page">
+        <section class="page-header"><div class="container"><h1>Notre Foi</h1><p>« Instruis l'enfant selon la voie qu'il doit suivre »</p></div></section>
+        <section style="padding:80px 0;"><div class="container"><div style="display:grid; grid-template-columns:1fr 1fr; gap:60px;"><div><h2 style="color:var(--primary-blue);">Une éducation fondée sur la Parole</h2><p>Au CSCF, nous croyons que l'éducation authentique ne peut se concevoir sans Dieu. Notre établissement place la Bible au cœur de son projet éducatif.</p><div style="background:var(--off-white); padding:28px; border-radius:24px; margin-top:30px; border-left:4px solid var(--accent-gold);"><i class="fas fa-quote-left" style="color:var(--accent-gold); font-size:1.5rem;"></i><p style="font-style:italic; margin:15px 0;">« Toute l'Écriture est inspirée de Dieu, et utile pour enseigner, pour convaincre, pour corriger, pour instruire dans la justice. »</p><span>2 Timothée 3:16</span></div></div><div><img src="https://images.unsplash.com/photo-1469827160215-9d1e96e7958e?w=600" style="width:100%; border-radius:32px; box-shadow:var(--shadow-lg);"></div></div></div></section>
+        <section style="padding:80px 0; background:var(--off-white);"><div class="container"><div style="display:grid; grid-template-columns:repeat(4,1fr); gap:30px;"><div style="text-align:center;"><i class="fas fa-bible" style="font-size:2rem; color:var(--primary-blue);"></i><h3 style="margin:15px 0;">La Bible</h3><p>Parole inspirée de Dieu</p></div><div style="text-align:center;"><i class="fas fa-pray" style="font-size:2rem; color:var(--primary-blue);"></i><h3 style="margin:15px 0;">Dieu Trinité</h3><p>Père, Fils et Saint-Esprit</p></div><div style="text-align:center;"><i class="fas fa-heart" style="font-size:2rem; color:var(--primary-blue);"></i><h3 style="margin:15px 0;">Jésus-Christ</h3><p>Sauveur et Seigneur</p></div><div style="text-align:center;"><i class="fas fa-dove" style="font-size:2rem; color:var(--primary-blue);"></i><h3 style="margin:15px 0;">Le Saint-Esprit</h3><p>Consolateur et Guide</p></div></div></div></section>
+    </div>
+
+    <!-- ========== PAGE GALERIE DYNAMIQUE ========== -->
+    <div id="gallery" class="page">
+        <section class="page-header"><div class="container"><h1>Notre Galerie</h1><p>Découvrez notre univers à travers nos images</p></div></section>
+        <section class="gallery-section"><div class="container"><div class="swiper gallery-slider"><div class="swiper-wrapper" id="gallerySwiper"></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div></section>
+    </div>
+
+    <!-- ========== PAGE INSCRIPTIONS ========== -->
+    <div id="inscriptions" class="page">
+        <section class="page-header"><div class="container"><h1>Pré-inscription</h1><p>Rejoignez la communauté d'excellence du CSCF</p></div></section>
+        <div class="form-container"><h2 style="text-align:center; margin-bottom:30px;">Formulaire de pré-inscription</h2><form id="inscriptionForm" onsubmit="event.preventDefault(); submitForm(this)"><div class="form-group"><label>Nom de l'enfant *</label><input type="text" required></div><div class="form-group"><label>Prénom de l'enfant *</label><input type="text" required></div><div class="form-group"><label>Date de naissance *</label><input type="date" required></div><div class="form-group"><label>Classe souhaitée *</label><select required><option>1ère année primaire</option><option>2ème année primaire</option><option>3ème année primaire</option><option>4ème année primaire</option></select></div><div class="form-group"><label>Téléphone parent *</label><input type="tel" required></div><div class="form-group"><label>Email</label><input type="email"></div><button type="submit" class="btn-primary" style="width:100%; justify-content:center;"><i class="fas fa-paper-plane"></i> Envoyer la pré-inscription</button></form></div>
+    </div>
+
+    <!-- ========== PAGE CONTACT ========== -->
+    <div id="contact" class="page">
+        <section class="page-header"><div class="container"><h1>Contact</h1><p>Notre équipe est à votre disposition</p></div></section>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; max-width:1200px; margin:80px auto; padding:0 20px;"><div style="background:var(--off-white); padding:40px; border-radius:32px;"><h3>Informations</h3><div style="margin:25px 0;"><i class="fas fa-phone" style="width:40px; color:var(--primary-blue);"></i> +243 123 456 789</div><div style="margin:25px 0;"><i class="fas fa-envelope" style="width:40px; color:var(--primary-blue);"></i> info@cscf-rdc.org</div><div style="margin:25px 0;"><i class="fas fa-map-marker-alt" style="width:40px; color:var(--primary-blue);"></i> Kinshasa, RDC</div><div><i class="fas fa-clock" style="width:40px; color:var(--primary-blue);"></i> Lun-Ven: 7h30 - 15h30</div></div><div class="form-container" style="margin:0; padding:40px;"><h3>Envoyez-nous un message</h3><form onsubmit="event.preventDefault(); alert('Message envoyé avec succès ! Nous vous répondrons rapidement.'); this.reset();"><div class="form-group"><input type="text" placeholder="Votre nom" required></div><div class="form-group"><input type="email" placeholder="Votre email" required></div><div class="form-group"><textarea rows="4" placeholder="Votre message" required></textarea></div><button type="submit" class="btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Envoyer</button></form></div></div>
+    </div>
+
+    <!-- ========== PAGE ESPACE PARENTS ========== -->
+    <div id="parents" class="page">
+        <section class="page-header"><div class="container"><h1>Espace Parents</h1><p>Accès sécurisé aux informations scolaires</p></div></section>
+        <div class="form-container"><h2 style="text-align:center; margin-bottom:30px;">Connexion sécurisée</h2><form onsubmit="event.preventDefault(); alert('Connexion réussie ! Bienvenue dans votre espace parents.');"><div class="form-group"><label>Email</label><input type="email" placeholder="parent@exemple.com" required></div><div class="form-group"><label>Mot de passe</label><input type="password" required></div><button type="submit" class="btn-primary" style="width:100%;"><i class="fas fa-lock"></i> Se connecter</button></form><p style="text-align:center; margin-top:25px;">Contactez le secrétariat pour obtenir vos identifiants</p></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container"><div class="footer-grid"><div><div class="footer-logo"><i class="fas fa-cross"></i><h3>CS CHRÉTIEN <span style="color:var(--accent-gold);">DE LA FOI</span></h3></div><p>Institution d'excellence formant les leaders de demain dans un cadre d'apprentissage exceptionnel.</p></div><div><h4>Navigation</h4><ul><li><a onclick="showPage('home')">Accueil</a></li><li><a onclick="showPage('about')">L'institution</a></li><li><a onclick="showPage('classes')">Nos programmes</a></li><li><a onclick="showPage('faith')">Notre foi</a></li></ul></div><div><h4>Services</h4><ul><li><a onclick="showPage('inscriptions')">Pré-inscription</a></li><li><a onclick="showPage('gallery')">Galerie</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div><div><h4>Contact</h4><ul><li><i class="fas fa-phone"></i> +243 123 456 789</li><li><i class="fas fa-envelope"></i> info@cscf-rdc.org</li><li>Kinshasa, RDC</li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 CS CHRÉTIEN DE LA FOI (CSCF) - Tous droits réservés. | Une institution d'excellence en République Démocratique du Congo</p><p style="margin-top:10px;">« Instruis l'enfant selon la voie qu'il doit suivre » Proverbes 22:6</p></div></div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Galerie dynamique avec images
+        const galleryImages = [
+            { src: 'C:\Users\IT\Desktop\DOC PROJET\site\cscf-ecole\assets\images', title: 'Salle de classe moderne', desc: 'Un environnement propice à l\'apprentissage' },
+            { src: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800', title: 'Bibliothèque', desc: 'Espace de lecture et de découverte' },
+            { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800', title: 'Activités pédagogiques', desc: 'Des méthodes d\'apprentissage innovantes' },
+            { src: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800', title: 'Cours collectifs', desc: 'Apprentissage collaboratif' },
+            { src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800', title: 'Cour de récréation', desc: 'Espace de jeu et de détente' },
+            { src: 'https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=800', title: 'Ateliers créatifs', desc: 'Développement de la créativité' }
+        ];
+
+        function initGallery() {
+            const swiperWrapper = document.getElementById('gallerySwiper');
+            if (swiperWrapper) {
+                swiperWrapper.innerHTML = galleryImages.map(img => `
+                    <div class="swiper-slide">
+                        <div class="gallery-slide" onclick="openModal('${img.src}')">
+                            <img src="${img.src}" alt="${img.title}" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>${img.title}</h4>
+                                <p>${img.desc}</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                
+                new Swiper('.gallery-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: { delay: 4000, disableOnInteraction: false },
+                    pagination: { el: '.swiper-pagination', clickable: true },
+                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+                });
+            }
+        }
+
+        function openModal(src) {
+            const modal = document.createElement('div');
+            modal.className = 'gallery-modal';
+            modal.innerHTML = `<div class="gallery-modal-content"><img src="${src}" alt="Galerie"><button class="gallery-modal-close" onclick="this.parentElement.parentElement.remove()">&times;</button></div>`;
+            document.body.appendChild(modal);
+            setTimeout(() => modal.classList.add('active'), 10);
+            modal.onclick = (e) => { if(e.target === modal) modal.remove(); };
+        }
+
+        // Navigation
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            document.querySelectorAll('.nav-menu a').forEach(link => link.classList.remove('active'));
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.getElementById('navMenu')?.classList.remove('active');
+            if(pageId === 'gallery') setTimeout(initGallery, 100);
+        }
+
+        function submitForm(form) {
+            const btn = form.querySelector('button');
+            const original = btn.innerHTML;
+            btn.innerHTML = '<span class="loading" style="display:inline-block; width:20px; height:20px; border:2px solid white; border-top-color:transparent; border-radius:50%; animation:spin 0.6s linear infinite;"></span> Envoi...';
+            btn.disabled = true;
+            setTimeout(() => {
+                alert('✅ Votre pré-inscription a été envoyée avec succès ! Un conseiller pédagogique vous contactera dans les 48 heures pour finaliser l\'inscription de votre enfant.');
+                form.reset();
+                btn.innerHTML = original;
+                btn.disabled = false;
+            }, 1000);
+        }
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('scrollTop')?.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        // Animation des compteurs
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll('.stat-number').forEach(counter => {
+                        const target = parseInt(counter.innerText);
+                        let current = 0;
+                        const update = () => {
+                            current += target / 50;
+                            if(current < target) { counter.innerText = Math.floor(current); requestAnimationFrame(update); }
+                            else counter.innerText = target;
+                        };
+                        update();
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        document.querySelector('.stats-section') && observer.observe(document.querySelector('.stats-section'));
+    </script>
+</body>
+</html>
